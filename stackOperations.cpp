@@ -36,7 +36,7 @@ class Stack {
             return arr[top];
         else {
             cout<<"Stack is empty";
-            return 0;
+            return -1;
         }
     }
 
