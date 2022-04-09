@@ -36,7 +36,7 @@ class Stack {
             return arr[top];
         else {
             cout<<"Stack is empty";
-            return -1;
+            return 0;
         }
     }
 
@@ -57,13 +57,16 @@ int main() {
     st.push(18);
     st.pop();
     st.pop();
-    // st.pop();
+    st.pop();
     // st.pop();
     // st.push(22);
     // st.push(20);
     // st.push(101);
 
-    cout<<st.isEmpty();
+    if(st.isEmpty())
+        cout<<"Stack is empty";
+    else 
+        cout<<"Stack is not empty";
 
     return 0;
 }
